@@ -1,5 +1,7 @@
-## Deploy to Heroku
+## Hello Deno🦕
 ```sh
-$ heroku create --buildpack https://github.com/chibat/heroku-buildpack-deno.git
-$ git push heroku master
+$ docker-compose up -d
+$ docker-compose exec web /bin/bash
+(in container) $ deno run --allow-net --allow-env main.ts
 ```
+
