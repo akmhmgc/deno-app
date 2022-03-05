@@ -1,7 +1,7 @@
 const port = parseInt(Deno.env.get('PORT') ?? '8000');
 const listener = Deno.listen({ port: port });
 
-console.log(`http://localhost:/${port}`);
+console.log(`http://localhost:${port}`);
 
 for await (const conn of listener) {
   serve(conn);
